@@ -1,19 +1,19 @@
 class Guisu < Formula
   desc "CLI for guisu dotfile manager"
   homepage "https://github.com/YvanY0/guisu"
-  version "0.2.11"
+  version "0.2.12"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/YvanY0/guisu/releases/download/v0.2.11/guisu-aarch64-apple-darwin.tar.xz"
-    sha256 "5f3385955eda0d4eaa6a2970de60e69aa10068f2de5487a47b1d8442b7e3d037"
+    url "https://github.com/YvanY0/guisu/releases/download/v0.2.12/guisu-aarch64-apple-darwin.tar.xz"
+    sha256 "07bebdc57085da67d626f4de2ecd41a8dfdf7b0862d76d28f17d9369c32f66a0"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/YvanY0/guisu/releases/download/v0.2.11/guisu-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f2bec7c12e8858fbb15dd0a780d895402a309b30cf63a0f7b4848579ac0c77a5"
+      url "https://github.com/YvanY0/guisu/releases/download/v0.2.12/guisu-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "4807f7623bd4485e3f391c439505e97dc903a4cdf5e8ccea55a21943c539ad2c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/YvanY0/guisu/releases/download/v0.2.11/guisu-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "20aaaaff0f702f0ef3e1453dbe3fee91d62294db70091523d96331721079f4ca"
+      url "https://github.com/YvanY0/guisu/releases/download/v0.2.12/guisu-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d37138778f18eb3cbf625535b383820a5562664bb4d53bb9d780acbc5152ea91"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
